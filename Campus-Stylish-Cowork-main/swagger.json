@@ -1,0 +1,479 @@
+{
+  "swagger": "2.0",
+
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "app.ben2.win",
+  "basePath": "/api/1.0/",
+  "schemes": [
+    "http","https"
+  ],
+  "paths": {
+    "/api/API_VERSION/order/checkout": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/api/API_VERSION/order/payments": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/api/API_VERSION/order/payments2": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/user/signup": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/user/signin": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/user/profile": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/card": {
+      "post": {
+        "description": "Insert user's card number",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "headers",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string",
+              "example": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6Im5hdGl2ZSIsIm5hbWUiOiJzcyIsImVtYWlsIjoic3NAZ21haWwuY29tIiwicGljdHVyZSI6bnVsbCwiaWF0IjoxNjY4MzE5OTA5fQ.0PPQT3uwCchGFNvAis2aydhW_ruRXiS8gJa8ezaOBy4"
+            }
+          },
+          {
+            "name":"card",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"card":"4242424242424242"}
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/birthday": {
+      "post": {
+        "description": "Insert user's birthday number",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "contentType": "application/json",
+              "type":"string",
+              "example":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImZhY2Vib29rIiwibmFtZSI6IumZs-edv-eRnCIsImVtYWlsIjoiYmVuY2hlbjIxNkBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vNTM2Mzk1NzUzMDI4NzQ5MS9waWN0dXJlP3R5cGU9bGFyZ2UiLCJpYXQiOjE2NjgzNDcyMzR9.cfkC7I2YWCrm1zR_ra5-ozZV97w7qpYYz4xeEgB7Jkk"
+            }
+          },{
+            "name":"birthday",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"birthday":"2011-11-11"}
+            }
+          }
+        ],
+
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/discount": {
+      "get": {
+        "description": "Get user's discount coupons",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "contentType": "application/json",
+              "type":"string",
+              "example":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImZhY2Vib29rIiwibmFtZSI6IumZs-edv-eRnCIsImVtYWlsIjoiYmVuY2hlbjIxNkBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vNTM2Mzk1NzUzMDI4NzQ5MS9waWN0dXJlP3R5cGU9bGFyZ2UiLCJpYXQiOjE2NjgzNDcyMzR9.cfkC7I2YWCrm1zR_ra5-ozZV97w7qpYYz4xeEgB7Jkk"
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/addComment": {
+      "post": {
+        "description": "Assign user's comment to product",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "contentType": "application/json",
+              "type":"string",
+              "example":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImZhY2Vib29rIiwibmFtZSI6IumZs-edv-eRnCIsImVtYWlsIjoiYmVuY2hlbjIxNkBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vNTM2Mzk1NzUzMDI4NzQ5MS9waWN0dXJlP3R5cGU9bGFyZ2UiLCJpYXQiOjE2NjgzNDcyMzR9.cfkC7I2YWCrm1zR_ra5-ozZV97w7qpYYz4xeEgB7Jkk"
+            }
+          },{
+            "name":"grade",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"grade":"2"}
+            }
+          },{
+            "name":"content",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"content":"good"}
+            }
+          },{
+            "name":"pId",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"pId":"201807201824"}
+            }
+          }
+
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/commentCheck": {
+      "post": {
+        "description": "check that whether the user can add comment(order not exist or has already assigned comment)",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "contentType": "application/json",
+              "type":"string",
+              "example":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImZhY2Vib29rIiwibmFtZSI6IumZs-edv-eRnCIsImVtYWlsIjoiYmVuY2hlbjIxNkBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vNTM2Mzk1NzUzMDI4NzQ5MS9waWN0dXJlP3R5cGU9bGFyZ2UiLCJpYXQiOjE2NjgzNDcyMzR9.cfkC7I2YWCrm1zR_ra5-ozZV97w7qpYYz4xeEgB7Jkk"
+            }
+          }
+          ,{
+            "name":"pId",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"pId":"201807201824"}
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/user/addDiscount": {
+      "post": {
+        "description": "Assign user discount coupons",
+        "parameters": [
+          {
+            "name": "Authorization",
+            "in": "header",
+            "description": "jwtToken of the user",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "contentType": "application/json",
+              "type":"string",
+              "example":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImZhY2Vib29rIiwibmFtZSI6IumZs-edv-eRnCIsImVtYWlsIjoiYmVuY2hlbjIxNkBnbWFpbC5jb20iLCJwaWN0dXJlIjoiaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vNTM2Mzk1NzUzMDI4NzQ5MS9waWN0dXJlP3R5cGU9bGFyZ2UiLCJpYXQiOjE2NjgzNDcyMzR9.cfkC7I2YWCrm1zR_ra5-ozZV97w7qpYYz4xeEgB7Jkk"
+            }
+          }
+          ,{
+            "name":"discountNumber",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"discountNumber":"2018"}
+            }
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/admin/product": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/admin/campaign": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/admin/hot": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/marketing/campaigns": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/marketing/hots": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/marketing/sale": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      },
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/order/checkout": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/order/payments": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/order/payments2": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/products/{category}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "category",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/products/comments": {
+      "post": {
+        "description": "Get product's comments",
+        "parameters": [
+          {
+            "name":"pId",
+            "in": "body",
+            "schema":{
+              "type":"string",
+              "contentType": "application/json",
+              "example":{"pId":"201807201824"}
+            }
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/collections": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "delete": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/collections/{p_id}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "p_id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stylish Product Management</title>
+<style>
+body{
+	font-size:16px;
+	font-family:"Noto Sans TC", "微軟正黑體", "新細明體", arial, sans-serif;
+	color:#3f3a3a;line-height:2.5em;
+}
+textarea{
+	width:400px;height:100px;padding:5px;
+}
+input{
+	width:300px;padding:5px;
+}
+</style>
+</head>
+<body>
+	<h3>Create a New Sale</h3>
+	<form method="post" action="/api/1.0/marketing/sale" enctype="multipart/form-data">
+		DID <input type="text" name="did" /><br/>
+		Cate <input type="text" name="cate" /><br/>
+		Substract <input type="text" name="substract" /><br/>
+        Time <input type="text" name="time" /><br/>
+
+		<input type="submit" value="Create" />
+	</form>
+</body>
+
+</html>
