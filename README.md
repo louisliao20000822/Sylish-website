@@ -31,3 +31,20 @@
 
 #### For Windows:
 3. Run integration test: ```npm run test_windows```
+
+### About Stylish
+
+### Technologies
+
+- **Back-End:** Node.js, Express, NGINX, RESTful API
+
+- **Front-End:** HTML, CSS, JavaScript, Bootstrap, Ajax
+
+- **Database:** MongoDB, Redis
+
+- **Cloud Service (AWS):** Elastic Compute Cloud (EC2), S3
+
+- **3rd Party APIs and Open Source Tools:** Socket.IO, crontab, Selenium, BeautifulSoup, LINE Pay API, TapPay SDK
+
+- **Environment:** Docker, Docker Compose
+
