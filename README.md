@@ -40,11 +40,11 @@
 
 - **Front-End:** HTML, CSS, JavaScript, Bootstrap, Ajax
 
-- **Database:** MongoDB, Redis
+- **Database:** MySQL, Redis
 
 - **Cloud Service (AWS):** Elastic Compute Cloud (EC2), S3
 
-- **3rd Party APIs and Open Source Tools:** Socket.IO, crontab, Selenium, BeautifulSoup, LINE Pay API, TapPay SDK
+- **3rd Party APIs and Open Source Tools:** Socket.IO, LINE Bot, TapPay SDK
 
 - **Environment:** Docker, Docker Compose
 
