@@ -33,7 +33,7 @@
 3. Run integration test: ```npm run test_windows```
 
 ### About Stylish
-
+![image](https://github.com/louisliao20000822/Sylish-website/blob/main/pic.jpg)
 ### Technologies
 
 - **Back-End:** Node.js, Express, NGINX, RESTful API
