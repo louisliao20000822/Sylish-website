@@ -32,7 +32,7 @@
 #### For Windows:
 3. Run integration test: ```npm run test_windows```
 
-### About Stylish
+# About Stylish
 ![image](https://github.com/louisliao20000822/Sylish-website/blob/main/pic.jpg)
 ### Technologies
 
@@ -47,4 +47,12 @@
 - **3rd Party APIs and Open Source Tools:** Socket.IO, LINE Bot, TapPay SDK
 
 - **Environment:** Docker, Docker Compose
+
+## Main features
+
+### Thrid party connection
+* login your account using facebook and pay with Tappay
+![support](https://buymeboba.s3.ap-southeast-1.amazonaws.com/asset/demo/support.gif)
+
+
 
