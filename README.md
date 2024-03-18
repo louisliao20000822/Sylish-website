@@ -51,8 +51,12 @@
 ## Main features
 
 ### Thrid party connection
-* login your account using facebook and pay with Tappay
-![image](https://github.com/louisliao20000822/Sylish-website/blob/main/gif/pay.gif)
+* Login your account using facebook and pay with Tappay
+* Use coupons to get discounts
+[!image](https://github.com/louisliao20000822/Sylish-website/blob/main/gif/pay-coupon.gif)
 
-
+* Create a Limited time sale event using admin page to get coupon for discount
+[!image](https://github.com/louisliao20000822/Sylish-website/blob/main/gif/hotsale.gif)
+## Other features
+* Collection、Coupon、Shopping cart、Stock limit、Infinite scrolling
 
