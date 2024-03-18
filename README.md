@@ -52,7 +52,7 @@
 
 ### Thrid party connection
 * login your account using facebook and pay with Tappay
-![support](https://buymeboba.s3.ap-southeast-1.amazonaws.com/asset/demo/support.gif)
+![image]([https://buymeboba.s3.ap-southeast-1.amazonaws.com/asset/demo/support.gif](https://github.com/louisliao20000822/Sylish-website/blob/main/gif/pay.gif)https://github.com/louisliao20000822/Sylish-website/blob/main/gif/pay.gif)
 
 
 
