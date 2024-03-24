@@ -5,7 +5,7 @@
 1. Install packages: ```npm install```
 2. Start MySQL server
 3. Import database:
-    1. ```mysql -u <user_name> -p <stylish_db_name> < stylish_backend.sql```
+    1. ```mysql -u <user_name> -p <stylish_db_name> < Sylish-website-main.sql```
     2. ```mysql -u <user_name> -p <stylish_test_db_name> < stylish_test.sql``` (Optional)
 4. Create config: ```.env``` for back-end (You can copy the schema from template: ```.env-template```)
     1. set `DB_HOST`, `DB_USERNAME`, `DB_PASSWORD`, `DB_DATABASE` for MySQL server (`DB_DATABASE_TEST` is Optional)
