@@ -52,7 +52,7 @@
 ## Main features
 
 ### Thrid party connection
-* Login your account using facebook and pay with Tappay
+* Login your account using facebook and pay with Tappay(`Tappay 可用測試卡號付款:4242 4242 4242 4242`)
 * Use coupons to get discounts
 
   ![](https://github.com/louisliao20000822/Sylish-website/blob/main/gif/pay-coupon.gif)
